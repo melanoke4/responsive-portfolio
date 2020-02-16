@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+/* body for all pages */
+body {
+    background: url('../basic-portfolio/assets/images/xv/xv.png');
+    font-size: 18px;
+    line-height: 34px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+
+/* master header */
+#masterheader {
+    background: #ffffff;
+    margin: 0 0 30px;
+    z-index: 99;
+    color: #4aaaa5;
+    overflow: auto;
+    border-bottom: 2px solid #cccccc;
+    position: fixed;
+    width: 100%;
+}
+
+/* top of all pages */
+#myname {
+    width: 250px;
+    height: 90px;
+    background: #4aaaa5;
+    float: left;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    text-align: center;
+    line-height: 90px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* nav bar for all pages */
+nav {
+    float: right;
+    margin-top: 25px;
+}
+
+nav a {           /* each link */
+    color: #777777;
+    text-decoration: none;
+    margin-left: 15px;
+    display: inline-block;
+    border-left: 1px solid #dddddd;  /* lines between words */
+    padding-left: 15px;
+    line-height: 18px;
+}
+
+nav a:first-child {
+    border-left: 0 none;
+}
+
+/* style for containers on each page */
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+
+/* style for main container on each page*/
+#main-container {
+    padding-top: 130px;
+    width: 730px;
+}
+
+.main-section {
+    background: #ffffff;
+    padding: 30px;
+    margin: 0 0 40px 0;
+    width: 100%;
+    max-width: 650px;
+    float: left;
+    border: 1px solid #cccccc; 
+    text-align: left;
+}
+
+
+/* headers and paragraphs */
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+h1, h2,  {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 50px;
+    border-bottom: 3px solid #cccccc;
+    padding-bottom: 20px;
+    color: #4aaaa5;
+}
+
+h2 {   /* not sure */
+    font-size: 22px;
+    /* border-bottom: 2px solid #cccccc; */
+    padding-bottom: 20px;
+    /* margin-bottom: 15px; */
+    line-height: 22px;
+}
+
+/* contact page */
+#contact-form ul {
+    margin-bottom: 20px;
+}
+
+#contact-form li {
+    margin-bottom: 10px;
+}
+
+label, input[type=text], input[type=email], textarea {
+    display: block;
+    width: 100%;
+}
+
+input[type=text], input[type=email], textarea {
+    height: 35px;
+    border: 1px solid #dddddd;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input[type=submit] {
+    background: #4aaaa5;
+    border: 0 none;
+    color: #777777;
+    font-size: 18px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+/* portfolio page */
+.games {
+    width: 274px;
+    height: 220px;
+    overflow: auto;
+    position: relative;
+    float: left;
+    margin: 20px 0 25px;
+}
+
+.games:nth-child(even) {
+    margin-right: 40px;
+}
+
+.games img {
+    width: 100%;
+    border: 0 none;
+}
+
+.games h2 {
+    border-bottom: 0;
+    background: #4aaaa5;
+    color: #ffffff;
+    text-align: center;
+    position: absolute;
+    bottom: 24px;
+    padding: 15px;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+/* all pictures */
+.all-image {
+    width: 200px;
+    height: 180px;
+    margin-top: 10px;
+    float: left;
+    margin-right: 25px;
+}
+
+.bio-image {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    float: left;
+    margin-right: 25px;
+}
+
+/* footer for all pages */
+footer {
+    background: #666666;
+    padding: 30px 0;
+    border-top: 8px solid #4aaaa5; /* input */
+    color: #777777;
+    font-size: 12px;
+    text-align: center;
+    clear: both;
+}
+
+
+
+
+
+/*Media inqueries */
+
+/* desktop */
+@media screen and (max-width: 980px ) {
+    /* .container {
+        width: 100%;
+      }
+       #main-container {
+           width: 100%;
+       } 
+        
+       nav {
+           width: 100%;
+           text-align: center;
+       } 
+       #myname {
+           width: 100%;
+       }
+      
+      header {
+          position: static;
+      }
+  
+      body {
+          width: 100%;
+      } */
+}
+  
+  /* tablet */
+  @media screen and (max-width: 768px) {
+    /* .container {
+        width: 100%;
+      }
+       #main-container {
+           width: 100%;
+       } 
+        
+       nav {
+           width: 60%;
+           text-align: center;
+       } 
+       #myname {
+           width: 40%;
+       }
+      
+      header {
+          position: static;
+      }
+  
+      body {
+          width: 100%;
+      } */
+}
+  
+  /* phone */
+  @media screen and (max-width: 640px) {
+    .container {
+      /* width: 100%; */
+      margin-top: 0px;
+      max-width: 500px;
+    }
+     #main-container {
+         width: 100%;
+         padding: 20px;
+     } 
+      
+     nav {
+         /* width: 100%; */
+         text-align: center;
+         float: none;
+         margin-top: 0;
+     } 
+     #myname {
+         width: 100%;
+     }
+    
+    #masterheader {
+        position: static;
+    }
+
+    body {
+        /* padding-top: 20px; */
+    }
+
+}
