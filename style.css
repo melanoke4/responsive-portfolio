@@ -207,6 +207,7 @@ footer {
     font-size: 12px;
     text-align: center;
     clear: both;
+   
 }
 
 
@@ -217,7 +218,7 @@ footer {
 
 /* desktop */
 @media screen and (max-width: 980px ) {
-    /* .container {
+    .container {
         width: 100%;
       }
        #main-container {
@@ -238,12 +239,12 @@ footer {
   
       body {
           width: 100%;
-      } */
+      }
 }
   
   /* tablet */
   @media screen and (max-width: 768px) {
-    /* .container {
+     .container {
         width: 100%;
       }
        #main-container {
@@ -264,16 +265,14 @@ footer {
   
       body {
           width: 100%;
-      } */
-}
+      } 
   
   /* phone */
   @media screen and (max-width: 640px) {
-    .container {
-      /* width: 100%; */
+    /* .container {
       margin-top: 0px;
       max-width: 500px;
-    }
+    } */
      #main-container {
          width: 100%;
          padding: 20px;
@@ -296,5 +295,8 @@ footer {
     body {
         /* padding-top: 20px; */
     }
-
+    /* footer {
+        height: 55px;
+        margin-top: -55px;
+    } */
 }
